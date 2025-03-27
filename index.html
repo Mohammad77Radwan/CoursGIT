@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simple HTML Form</title>
 </head>
 <body>
-<h1>Cours GIT</h1>  
+    <h1>Contact Us</h1>
 
-<h2>Contact Us</h2>
+    <!-- Image Added via URL -->
+    <img src="https://www.psdstack.com/wp-content/uploads/2019/08/copyright-free-images-750x420.jpg" alt="Copyright Free Images" width="300">
+
     <form action="/submit" method="POST">
         <!-- Full Name -->
         <label for="full-name">Full Name:</label>
@@ -22,27 +24,17 @@
         <label for="message">Your Message:</label><br>
         <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
 
+        <!-- Dropdown Menu (Preferred Contact Method) -->
+        <label for="contact-method">Preferred Contact Method:</label>
+        <select id="contact-method" name="contact-method" required>
+            <option value="">Select a method</option>
+            <option value="email">Email</option>
+            <option value="phone">Phone</option>
+            <option value="chat">Live Chat</option>
+        </select><br><br>
+
         <!-- Submit Button -->
         <button type="submit">Submit</button>
     </form>
-
-
-<!-- Image Added -->
-    <img src="https://www.psdstack.com/wp-content/uploads/2019/08/copyright-free-images-750x420.jpg" alt="copyright-free-images" width="300">
-
-
-
-
- <!-- Dropdown Menu (Preferred Contact Method) -->
- <label for="contact-method">Preferred Contact Method:</label>
- <select id="contact-method" name="contact-method" required>
-     <option value="">Select a method</option>
-     <option value="email">Email</option>
-     <option value="phone">Phone</option>
-     <option value="chat">Live Chat</option>
- </select><br><br>
-
- 
-
 </body>
 </html>
